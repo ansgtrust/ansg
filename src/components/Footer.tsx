@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import {
   Mail,
@@ -20,8 +19,8 @@ export const Footer = () => {
           {/* About Section */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <Image
-                src="/images/sri-premdarshnanad-gurukul-logo.svg"
+              <img
+                src="./images/sri-premdarshnanad-gurukul-logo.svg"
                 alt="Shri Premdarshanand Ved Vidhya Gurukulam"
                 width="200"
                 height="200"
@@ -36,8 +35,9 @@ export const Footer = () => {
               </div> */}
             </div>
             <p className="text-sm text-rose-100 leading-relaxed">
-              🕉 श्री प्रेमदर्शनानन्द वेद विद्या गुरुकुलम् <br />
-              अनाम नारायण सेवा गुरुकुलम् ट्रस्ट द्वारा संचालित
+              अनाथ नारायण सेवा गुरुकुलम् ट्रस्ट
+              {/* 🕉 श्री प्रेमदर्शनानन्द वेद विद्या गुरुकुलम् <br />
+              अनाथ नारायण सेवा गुरुकुलम् ट्रस्ट द्वारा संचालित */}
             </p>
             <p className="text-sm text-rose-100 leading-relaxed">
               पता: श्री शिव मन्दिर, ग्रीन एनक्लेव, चिपियाना बुजुर्ग, गौतम बुद्ध
@@ -59,7 +59,23 @@ export const Footer = () => {
                   href="/"
                   className="text-sm text-rose-100 hover:text-white transition-colors duration-200"
                 >
-                  Home
+                  होम
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/anathalay"
+                  className="text-sm text-rose-100 hover:text-white transition-colors duration-200"
+                >
+                  अनाथालय
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/gurukul"
+                  className="text-sm text-rose-100 hover:text-white transition-colors duration-200"
+                >
+                  गुरुकुल
                 </Link>
               </li>
               <li>
@@ -67,7 +83,7 @@ export const Footer = () => {
                   href="/about"
                   className="text-sm text-rose-100 hover:text-white transition-colors duration-200"
                 >
-                  About Us
+                  हमारे बारे में
                 </Link>
               </li>
               <li>
@@ -75,17 +91,17 @@ export const Footer = () => {
                   href="/contact"
                   className="text-sm text-rose-100 hover:text-white transition-colors duration-200"
                 >
-                  Contact
+                  संपर्क
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="#"
                   className="text-sm text-rose-100 hover:text-white transition-colors duration-200"
                 >
                   Admissions
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 

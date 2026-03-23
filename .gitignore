@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# rename.js not needed there
+rename.js
+
+# ssh_key not needed as well
+/ssh_key

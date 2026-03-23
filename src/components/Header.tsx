@@ -1,9 +1,10 @@
 "use client";
+
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
+import { Button } from "./ui/button";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,6 +13,7 @@ export const Header = () => {
   const navLinks = [
     { path: "/", label: "होम" },
     { path: "/anathalay", label: "अनाथालय" },
+    { path: "/gurukul", label: "गुरुकुल" },
     { path: "/about", label: "हमारे बारे में" },
     { path: "/contact", label: "संपर्क" },
   ];
@@ -23,10 +25,10 @@ export const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-30">
           <Link href="/" className="flex items-center space-x-2 group">
-            <div className="w-40 flex items-center justify-center transition-all duration-300">
+            <div className="w-28 flex items-center justify-center transition-all duration-300">
               {/* <span className="text-white font-bold text-xl">ॐ</span> */}
-              <Image
-                src="/images/sri-premdarshnanad-gurukul-logo.svg"
+              <img
+                src="./images/anath-narayan-seva-gurukulam.png"
                 alt="Shri Premdarshanand Ved Vidhya Gurukulam"
                 width="200"
                 height="200"
@@ -53,13 +55,22 @@ export const Header = () => {
                 )}
               </Link>
             ))}
+            <Button
+              disabled
+              className="bg-gradient-to-r from-red-600 to-rose-500 hover:from-red-700 hover:to-rose-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              Donate Now
+            </Button>
           </nav>
 
-          {/* CTA Button
-          <div className="hidden md:block">
-            <button className="bg-gradient-to-r from-red-600 to-rose-500 hover:from-red-700 hover:to-rose-600 text-white shadow-lg hover:shadow-xl transition-all duration-300">
-              Enroll Now
-            </button>
+          {/* CTA Button */}
+          {/* <div className="hidden md:block">
+            <Button
+              disabled
+              className="bg-gradient-to-r from-red-600 to-rose-500 hover:from-red-700 hover:to-rose-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              Donate Now
+            </Button>
           </div> */}
 
           {/* Mobile Menu Button */}

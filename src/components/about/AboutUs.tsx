@@ -193,11 +193,11 @@ export const AboutUs = () => {
               Join Our Devoted Community
             </h2>
             <p className="text-xl text-rose-100 leading-relaxed">
-              At VED MANTRA Gurukul, we don&apos;t just educate students – we
-              nurture enlightened souls who carry forward the torch of ancient
-              wisdom while embracing modern progress. Our community of students,
-              teachers, and devotees creates a sacred space for growth,
-              learning, and spiritual awakening.
+              At Anath Narayan Sewa Gurukulam Trust, we don&apos;t just educate
+              students – we nurture enlightened souls who carry forward the
+              torch of ancient wisdom while embracing modern progress. Our
+              community of students, teachers, and devotees creates a sacred
+              space for growth, learning, and spiritual awakening.
             </p>
           </div>
         </div>

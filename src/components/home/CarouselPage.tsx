@@ -9,7 +9,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
@@ -25,17 +24,23 @@ interface Slide {
 const CarouselPage = () => {
   const slides: Slide[] = [
     {
-      image: "/images/carousel/img1.jpg",
-      title: "गुरुकुल — ऋषियों की धरती से ज्ञान का प्रकाश",
-      desc: "ज्ञान की प्राचीन परंपरा, शिक्षा का पवित्र धाम",
+      image: "./images/carousel/orphan.jpg",
+      title:
+        "सुरक्षित आश्रय, शिक्षा और विकास, प्रेम और देखभाल, खेल और संस्कार, उज्ज्वल भविष्य",
+      desc: "हर बच्चे के लिए परिवार जैसा घर और स्नेहपूर्ण वातावरण। योग, खेलकूद और सांस्कृतिक गतिविधियों के माध्यम से संपूर्ण विकास।",
     },
     {
-      image: "/images/carousel/img2.jpg",
+      image: "./images/carousel/img1.jpg",
+      title: "गुरुकुल — ऋषियों की धरती से ज्ञान का प्रकाश",
+      desc: "गुणवत्तापूर्ण शिक्षा और नैतिक मूल्यों के साथ उज्ज्वल भविष्य।",
+    },
+    {
+      image: "./images/carousel/img2.jpg",
       title: "गुरुकुल — शिक्षा, संस्कृति और संस्कार का संगम",
       desc: "ज्ञान, अनुशासन और आध्यात्मिकता का घर, गुरुओं की कृपा, शिष्यों का मार्ग",
     },
     {
-      image: "/images/carousel/img3.jpg",
+      image: "./images/carousel/img3.jpg",
       title: "गुरुकुल — ज्ञान, अनुशासन और आध्यात्मिकता का घर",
       desc: "गुरुकुल: भारतीय शिक्षा की आत्मा, सीखने की प्राचीन परंपरा, जहाँ शिक्षा चरित्र निर्माण बनती है",
     },
@@ -82,13 +87,11 @@ const CarouselPage = () => {
               className="!pl-0 !ml-0 w-full h-[80vh] overflow-hidden"
             >
               <div className="relative w-full h-full">
-                <Image
+                <img
                   src={item.image}
                   alt={item.title}
-                  fill
                   sizes="100vw"
                   className="object-cover"
-                  priority
                 />
 
                 {/* Overlay */}
@@ -126,7 +129,7 @@ const CarouselPage = () => {
         <CarouselNext className="right-4 top-1/2 -translate-y-1/2 z-10" />
 
         {/* DOTS */}
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-50">
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10">
           {slides.map((_, i) => (
             <button
               key={i}

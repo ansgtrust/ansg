@@ -11,11 +11,11 @@ interface Feature {
 
 export const schoolInfo = {
   name: "श्री प्रेमदर्शनानन्द वेद विद्या गुरुकुलम्",
-  tagline: "अनाम नारायण सेवा गुरुकुलम् ट्रस्ट द्वारा संचालित",
+  tagline: "अनाथ नारायण सेवा गुरुकुलम् ट्रस्ट द्वारा संचालित",
   description:
     "श्री प्रेमदर्शनानन्द वेद विद्या गुरुकुलम् में विद्यार्थियों को वेद, संस्कृत, धर्म और संस्कृति की प्राचीन परम्पराओं के साथ आधुनिक शिक्षा का भी समुचित ज्ञान दिया जाता है। हाँ शिक्षा का उद्देश्य केवल रोजगार प्राप्त करना नहीं, बल्कि चरित्र निर्माण, संस्कार संवर्धन और मानव सेवा के भाव को जागृत करना है। गुरुकुल में वेद-पाठ, योगाभ्यास, संस्कृत अध्ययन, शारीरिक एवं मानसिक विकास के लिए विविध गतिविधियाँ संचालित की जाती हैं। हमारा संकल्प है — ",
   phone: "+91 9520559292",
-  email: "info@SriPremdarshananandVedaVidyaGurukulam.com",
+  email: "info@anathnarayansewaGurukulamtrust.com",
   address:
     "श्री शिव मन्दिर, ग्रीन एनक्लेव, चिपियाना बुजुर्ग, गौतम बुद्ध नगर – 201009, उ.प्र.",
 };
@@ -23,30 +23,30 @@ export const schoolInfo = {
 export const features: Feature[] = [
   {
     id: 1,
-    title: "Vedic Education",
+    title: "वैदिक शिक्षा",
     description:
-      "Traditional Sanskrit, Vedic texts, and ancient wisdom taught by experienced scholars",
+      "अनुभवी विद्वानों द्वारा पारंपरिक संस्कृत, वेदों और प्राचीन ज्ञान की शिक्षा",
     icon: "BookOpen",
   },
   {
     id: 2,
-    title: "Spiritual Development",
+    title: "आध्यात्मिक विकास",
     description:
-      "Daily meditation, yoga, and prayer sessions for holistic growth of mind, body, and soul",
+      "मन, शरीर और आत्मा के समग्र विकास के लिए दैनिक ध्यान, योग और प्रार्थना सत्र",
     icon: "Heart",
   },
   {
     id: 3,
-    title: "Modern Curriculum",
+    title: "आधुनिक पाठ्यक्रम",
     description:
-      "Balanced integration of contemporary subjects with traditional Gurukul teachings",
+      "पारंपरिक गुरुकुल शिक्षा के साथ आधुनिक विषयों का संतुलित समावेश",
     icon: "GraduationCap",
   },
   {
     id: 4,
-    title: "Devoted Teachers",
+    title: "समर्पित शिक्षक",
     description:
-      "Experienced Gurus and devotees dedicated to nurturing each student's potential",
+      "अनुभवी गुरु और सेवाभावी आचार्य, जो प्रत्येक विद्यार्थी की क्षमता को निखारने के लिए समर्पित हैं",
     icon: "Users",
   },
 ];
@@ -68,23 +68,23 @@ export const aboutContent = {
 export const testimonials = [
   {
     id: 1,
-    name: "Radha Sharma",
+    name: "Arvind Sharma",
     role: "Parent",
-    text: "VED MANTRA Gurukul has transformed my child's life. The perfect blend of spiritual and academic education is remarkable.",
+    text: "श्री प्रेमदर्शनानन्द वेद विद्या गुरुकुलम् ने मेरे बच्चे के जीवन को पूरी तरह बदल दिया है। आध्यात्मिक और शैक्षणिक शिक्षा का यह संतुलित समन्वय वास्तव में अद्भुत है।",
     rating: 5,
   },
   {
     id: 2,
-    name: "Arjun Patel",
+    name: "Arjun Singh",
     role: "Alumni",
-    text: "The Vedic teachings and values I learned here continue to guide me in my professional and personal life.",
-    rating: 5,
+    text: "यहाँ प्राप्त वैदिक शिक्षाएँ और संस्कार आज भी मेरे व्यक्तिगत और व्यावसायिक जीवन में मेरा मार्गदर्शन कर रहे हैं।",
+    rating: 4,
   },
   {
     id: 3,
-    name: "Priya Desai",
+    name: "Samarpit Pandey",
     role: "Current Student",
-    text: "Every day at the Gurukul is a journey of self-discovery and learning. The Gurus are incredibly supportive.",
+    text: "गुरुकुल का प्रत्येक दिन आत्म-खोज और ज्ञान प्राप्ति की एक नई यात्रा होता है। यहाँ के गुरु अत्यंत सहयोगी और प्रेरणादायक हैं।",
     rating: 5,
   },
 ];
@@ -92,20 +92,20 @@ export const testimonials = [
 export const programs = [
   {
     id: 1,
-    title: "Primary Gurukul (Ages 6-10)",
+    title: "प्राथमिक गुरुकुल (आयु 6-10 वर्ष)",
     description:
-      "Foundation in Vedic chanting, basic Sanskrit, and core academic subjects",
+      "वैदिक मंत्रोच्चारण की आधारभूत शिक्षा, प्रारंभिक संस्कृत ज्ञान तथा मुख्य शैक्षणिक विषयों का अध्ययन",
   },
   {
     id: 2,
-    title: "Secondary Gurukul (Ages 11-15)",
+    title: "माध्यमिक गुरुकुल (आयु 11-15 वर्ष)",
     description:
-      "Advanced Vedic studies, Sanskrit literature, and integrated modern curriculum",
+      "उन्नत वैदिक अध्ययन, संस्कृत साहित्य तथा आधुनिक विषयों का समन्वित पाठ्यक्रम",
   },
   {
     id: 3,
-    title: "Senior Gurukul (Ages 16-18)",
+    title: "वरिष्ठ गुरुकुल (आयु 16-18 वर्ष)",
     description:
-      "Specialized Vedic streams, competitive exam preparation, and spiritual leadership",
+      "विशेषीकृत वैदिक शिक्षा, प्रतियोगी परीक्षाओं की तैयारी तथा आध्यात्मिक नेतृत्व का विकास",
   },
 ];

@@ -22,7 +22,7 @@ const ContactUs = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -254,8 +254,11 @@ const ContactUs = () => {
           </div>
 
           <div className="max-w-5xl mx-auto">
-            <Card className="border-2 border-red-200 shadow-xl overflow-hidden">
-              <div className="aspect-video bg-gradient-to-br from-rose-100 to-red-100 flex items-center justify-center">
+            <Card
+              className="border-2 border-red-200 shadow-xl overflow-hidden bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: "url('/images/map.png')" }}
+            >
+              <div className="aspect-video flex items-center justify-center">
                 <div className="text-center">
                   <MapPin className="w-16 h-16 text-red-600 mx-auto mb-4" />
                   <h3 className="text-2xl font-bold text-red-700 mb-2">
