@@ -63,20 +63,10 @@ export const Header = () => {
             </Button>
           </nav>
 
-          {/* CTA Button */}
-          {/* <div className="hidden md:block">
-            <Button
-              disabled
-              className="bg-gradient-to-r from-red-600 to-rose-500 hover:from-red-700 hover:to-rose-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              Donate Now
-            </Button>
-          </div> */}
-
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-red-600 hover:bg-rose-50 rounded-lg transition-colors duration-200"
+            className="md:hidden p-2 text-yellow-400 hover:bg-rose-50 rounded-lg transition-colors duration-200"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -84,26 +74,29 @@ export const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-rose-100">
+          <div className="md:hidden py-4 border-none border-rose-100">
             <nav className="flex flex-col space-y-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   href={link.path}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`text-base font-medium px-4 py-2 rounded-lg transition-all duration-300 ${
+                  className={`text-base text-center font-medium px-4 py-2 rounded-lg transition-all duration-300 ${
                     isActive(link.path)
                       ? "text-red-600 bg-rose-50"
-                      : "text-gray-700 hover:text-red-600 hover:bg-rose-50"
+                      : "text-yellow-400 hover:text-red-600 hover:bg-rose-50"
                   }`}
                 >
                   {link.label}
                 </Link>
               ))}
               <div className="px-4 pt-2">
-                <button className="w-full bg-gradient-to-r from-red-600 to-rose-500 hover:from-red-700 hover:to-rose-600 text-white shadow-lg">
-                  Enroll Now
-                </button>
+                <Button
+                  disabled
+                  className="w-full bg-gradient-to-r from-red-600 to-rose-500 hover:from-red-700 hover:to-rose-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  Donate Now
+                </Button>
               </div>
             </nav>
           </div>

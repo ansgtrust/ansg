@@ -9,10 +9,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Button } from "../ui/button";
-import { ArrowDown } from "lucide-react";
+import DownSlideBtn from "./DownSlideBtn";
 
 // Slide Type
 interface Slide {
@@ -24,23 +22,29 @@ interface Slide {
 const CarouselPage = () => {
   const slides: Slide[] = [
     {
-      image: "./images/carousel/orphan.jpg",
-      title:
-        "सुरक्षित आश्रय, शिक्षा और विकास, प्रेम और देखभाल, खेल और संस्कार, उज्ज्वल भविष्य",
-      desc: "हर बच्चे के लिए परिवार जैसा घर और स्नेहपूर्ण वातावरण। योग, खेलकूद और सांस्कृतिक गतिविधियों के माध्यम से संपूर्ण विकास।",
-    },
-    {
-      image: "./images/carousel/img1.jpg",
-      title: "गुरुकुल — ऋषियों की धरती से ज्ञान का प्रकाश",
-      desc: "गुणवत्तापूर्ण शिक्षा और नैतिक मूल्यों के साथ उज्ज्वल भविष्य।",
-    },
-    {
       image: "./images/carousel/img2.jpg",
       title: "गुरुकुल — शिक्षा, संस्कृति और संस्कार का संगम",
       desc: "ज्ञान, अनुशासन और आध्यात्मिकता का घर, गुरुओं की कृपा, शिष्यों का मार्ग",
     },
     {
-      image: "./images/carousel/img3.jpg",
+      image: "./images/carousel/gurukul-img.jpg",
+      title:
+        "सुरक्षित आश्रय, शिक्षा और विकास, प्रेम और देखभाल, खेल और संस्कार, उज्ज्वल भविष्य",
+      desc: "हर बच्चे के लिए परिवार जैसा घर और स्नेहपूर्ण वातावरण। योग, खेलकूद और सांस्कृतिक गतिविधियों के माध्यम से संपूर्ण विकास।",
+    },
+    {
+      image: "./images/carousel/shakha.jpg",
+      title:
+        "सुरक्षित आश्रय, शिक्षा और विकास, प्रेम और देखभाल, खेल और संस्कार, उज्ज्वल भविष्य",
+      desc: "हर बच्चे के लिए परिवार जैसा घर और स्नेहपूर्ण वातावरण। योग, खेलकूद और सांस्कृतिक गतिविधियों के माध्यम से संपूर्ण विकास।",
+    },
+    {
+      image: "./images/carousel/mantrocharan.jpg",
+      title: "गुरुकुल — ऋषियों की धरती से ज्ञान का प्रकाश",
+      desc: "गुणवत्तापूर्ण शिक्षा और नैतिक मूल्यों के साथ उज्ज्वल भविष्य।",
+    },
+    {
+      image: "./images/carousel/mandir.jpg",
       title: "गुरुकुल — ज्ञान, अनुशासन और आध्यात्मिकता का घर",
       desc: "गुरुकुल: भारतीय शिक्षा की आत्मा, सीखने की प्राचीन परंपरा, जहाँ शिक्षा चरित्र निर्माण बनती है",
     },
@@ -84,9 +88,9 @@ const CarouselPage = () => {
           {slides.map((item, index) => (
             <CarouselItem
               key={index}
-              className="!pl-0 !ml-0 w-full h-[80vh] overflow-hidden"
+              className="!pl-0 !ml-0 w-full h-auto md:h-[80vh] overflow-hidden"
             >
-              <div className="relative w-full h-full">
+              <div className="relative w-full h-auto md:h-full">
                 <img
                   src={item.image}
                   alt={item.title}
@@ -100,23 +104,13 @@ const CarouselPage = () => {
                 {/* TEXT */}
                 <div className="absolute inset-0 flex items-center justify-center text-white">
                   <div className="text-center px-4">
-                    <h2 className="text-4xl font-bold drop-shadow-lg">
+                    <h2 className="text-base md:text-4xl font-bold drop-shadow-lg">
                       {item.title}
                     </h2>
 
                     <p className="text-lg mt-2 drop-shadow-lg">{item.desc}</p>
 
-                    <div className="text-center px-4 pt-8 block">
-                      <Link href="#next-section" className="cursor-pointer">
-                        <Button
-                          size="lg"
-                          className="bg-gradient-to-r from-red-600 to-rose-500 hover:from-red-700 hover:to-rose-600 text-white shadow-xl hover:shadow-2xl transition-all duration-300 text-lg px-8 py-6"
-                        >
-                          आगे और देखें!
-                          <ArrowDown className="ml-2 w-5 h-5" />
-                        </Button>
-                      </Link>
-                    </div>
+                    <DownSlideBtn />
                   </div>
                 </div>
               </div>

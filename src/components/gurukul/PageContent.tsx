@@ -34,16 +34,23 @@ export const PageContent = () => {
       <section className="relative overflow-hidden bg-gradient-to-br from-rose-500 via-red-200 to-orange-500">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iI2ZmZGRkZCIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9nPjwvc3ZnPg==')] opacity-40"></div>
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
             {/* Om Symbol with animation */}
-            <div className="mb-6 relative">
+            {/* <div className="mb-6 relative">
               <div className="w-20 h-20 bg-gradient-to-br from-red-600 to-rose-500 rounded-full flex items-center justify-center shadow-2xl animate-pulse">
                 <span className="text-white font-bold text-4xl">ॐ</span>
               </div>
               <div className="absolute -top-2 -right-2">
                 <Sparkles className="text-yellow-500 w-6 h-6 animate-bounce" />
               </div>
+            </div> */}
+
+            <div className="mb-6 max-w-80">
+              <img
+                src="/images/sri-premdarshnanad-gurukul-logo.png"
+                style={{ width: "100%" }}
+              />
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-red-700 via-rose-600 to-red-700 bg-clip-text text-transparent leading-tight">

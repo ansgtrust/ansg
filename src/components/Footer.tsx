@@ -20,19 +20,12 @@ export const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <img
-                src="./images/sri-premdarshnanad-gurukul-logo.svg"
+                src="./images/anath-narayan-seva-gurukulam.png"
                 alt="Shri Premdarshanand Ved Vidhya Gurukulam"
                 width="200"
                 height="200"
-                style={{ width: "100%", height: "auto" }}
+                style={{ width: "130px", height: "auto" }}
               />
-              {/* <div className="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center">
-                <span className="text-yellow-300 font-bold text-lg">ॐ</span>
-              </div>
-              <div>
-                <h3 className="text-lg font-bold">{schoolInfo.name}</h3>
-                <p className="text-xs text-rose-200">Gurukul</p>
-              </div> */}
             </div>
             <p className="text-sm text-rose-100 leading-relaxed">
               अनाथ नारायण सेवा गुरुकुलम् ट्रस्ट
@@ -119,13 +112,17 @@ export const Footer = () => {
               </li>
               <li className="flex items-start space-x-3">
                 <Mail size={16} className="mt-1 text-rose-300" />
-                <span className="text-sm text-rose-100">
+                <span className="text-sm text-rose-100 text-wrap">
                   {schoolInfo.email}
                 </span>
               </li>
               <li className="flex items-start space-x-3">
-                <MapPin size={16} className="mt-1 text-rose-300" />
-                <span className="text-sm text-rose-100">
+                <MapPin
+                  size={16}
+                  style={{ width: "35px" }}
+                  className="mt-1 text-rose-300"
+                />
+                <span className="text-sm text-rose-100 text-wrap">
                   {schoolInfo.address}
                 </span>
               </li>
@@ -173,8 +170,7 @@ export const Footer = () => {
         <div className="mt-8 pt-8 border-t border-rose-700/50">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-rose-200">
-              © 2025 श्री प्रेमदर्शनानन्द वेद विद्या गुरुकुलम् All rights
-              reserved.
+              © 2026 अनाथ नारायण सेवा गुरुकुलम् ट्रस्ट All rights reserved.
             </p>
             <div className="flex space-x-6">
               <a
