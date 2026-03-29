@@ -14,6 +14,7 @@ export const Header = () => {
     { path: "/", label: "होम" },
     { path: "/anathalay", label: "अनाथालय" },
     { path: "/gurukul", label: "गुरुकुल" },
+    { path: "/gallery", label: "दृश्य संग्रह" },
     { path: "/about", label: "हमारे बारे में" },
     { path: "/contact", label: "संपर्क" },
   ];

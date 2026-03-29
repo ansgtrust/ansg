@@ -11,6 +11,7 @@ import {
 
 import { useEffect, useState } from "react";
 import DownSlideBtn from "./DownSlideBtn";
+import Autoplay from "embla-carousel-autoplay";
 
 // Slide Type
 interface Slide {
@@ -73,6 +74,12 @@ const CarouselPage = () => {
       api.off("select", onSelect);
     };
   }, [api]);
+  const autoplayOptions = {
+    delay: 4000, // Duration each slide is displayed in milliseconds
+    stopOnMouseEnter: true, // Pauses autoplay on mouse hover
+    stopOnFocusIn: true, // Pauses autoplay when carousel is focused
+    // stopOnInteraction: false, // Autoplay continues after user interaction
+  };
 
   return (
     <section className="w-full overflow-hidden">

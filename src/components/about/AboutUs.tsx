@@ -10,6 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { aboutContent } from "@/mock/mock";
+import Sanchalak from "./Sanchalak";
 
 export const AboutUs = () => {
   return (
@@ -23,16 +24,35 @@ export const AboutUs = () => {
                 <Book className="w-8 h-8 text-white" />
               </div>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold py-6 bg-gradient-to-r from-red-700 via-rose-600 to-red-700 bg-clip-text text-transparent">
+            <h1 className="text-start text-5xl md:text-6xl font-bold py-6 bg-gradient-to-r from-red-700 via-rose-600 to-red-700 bg-clip-text text-transparent">
               हमारे गुरुकुलम के बारे में
             </h1>
-            <p className="text-xl text-gray-700 leading-relaxed">
+            <p className="text-start text-xl text-gray-700 leading-relaxed mb-2">
               एक पवित्र संस्था जो प्राचीन वैदिक ज्ञान के संरक्षण और आधुनिक विश्व
               के लिए मस्तिष्क का पोषण करने के लिए समर्पित है।
+            </p>
+            <p className="text-start text-xl text-gray-700 leading-relaxed">
+              हमारा गुरुकुलम एक ऐसा पावन शिक्षण संस्थान है जहाँ आधुनिक शिक्षा के
+              साथ-साथ भारतीय संस्कृति, संस्कार और नैतिक मूल्यों का समन्वय किया
+              जाता है। यहाँ विद्यार्थियों को केवल पुस्तकीय ज्ञान ही नहीं, बल्कि
+              जीवन को सही दिशा में ले जाने वाली शिक्षाएँ भी दी जाती हैं।
+              अनुशासन, सम्मान और आत्मनिर्भरता हमारे गुरुकुलम की प्रमुख विशेषताएँ
+              हैं, जो प्रत्येक विद्यार्थी के व्यक्तित्व निर्माण में महत्वपूर्ण
+              भूमिका निभाती हैं। गुरुकुलम का वातावरण शांत, सकारात्मक और
+              प्रेरणादायक है, जहाँ गुरु और शिष्य के बीच एक विशेष संबंध स्थापित
+              होता है। यहाँ शिक्षा का उद्देश्य केवल परीक्षा में सफलता प्राप्त
+              करना नहीं, बल्कि विद्यार्थियों को एक जिम्मेदार, जागरूक और संस्कारी
+              नागरिक बनाना है। हमारे गुरुकुलम में हर विद्यार्थी को अपनी क्षमता
+              पहचानने और उसे निखारने का पूरा अवसर दिया जाता है। हमारा प्रयास है
+              कि हम ऐसी पीढ़ी तैयार करें जो ज्ञान, चरित्र और संस्कारों से समृद्ध
+              हो, और समाज तथा राष्ट्र के विकास में अपना महत्वपूर्ण योगदान दे
+              सके।
             </p>
           </div>
         </div>
       </section>
+
+      <Sanchalak />
 
       {/* Mission & Vision Section */}
       <section className="py-20 bg-white">
