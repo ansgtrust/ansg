@@ -16,7 +16,9 @@ const Sanchalak = () => {
 
           {/* Text Section */}
           <div className="w-full md:w-2/3">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">नवनीत जी</h2>
+            <h2 className="text-2xl md:text-3xl text-black font-bold mb-4">
+              नवनीत जी
+            </h2>
 
             <p className="text-gray-700 leading-relaxed mb-3">
               गुरुकुल के संचालक श्री नवनीत जी एक समर्पित, अनुशासित और दूरदर्शी

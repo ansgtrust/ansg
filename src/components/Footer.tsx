@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import {
   Mail,
@@ -87,14 +86,6 @@ export const Footer = () => {
                   संपर्क
                 </Link>
               </li>
-              {/* <li>
-                <a
-                  href="#"
-                  className="text-sm text-rose-100 hover:text-white transition-colors duration-200"
-                >
-                  Admissions
-                </a>
-              </li> */}
             </ul>
           </div>
 
@@ -170,7 +161,8 @@ export const Footer = () => {
         <div className="mt-8 pt-8 border-t border-rose-700/50">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-rose-200">
-              © 2026 अनाथ नारायण सेवा गुरुकुलम् ट्रस्ट All rights reserved.
+              © {new Date().getFullYear()} अनाथ नारायण सेवा गुरुकुलम् ट्रस्ट All
+              rights reserved.
             </p>
             <div className="flex space-x-6">
               <a

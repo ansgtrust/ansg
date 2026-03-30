@@ -13,7 +13,6 @@ const Gallery = () => {
       item.includes(".jpeg") || item.includes(".jpg") || item.includes(".png"),
   );
 
-  console.log(onlyImagesVideos);
   return <GallerySection galleryImages={onlyImagesVideos} />;
 };
 

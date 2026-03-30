@@ -5,14 +5,14 @@ const AnathalayTop = () => {
     <section className="bg-gradient-to-r from-red-200 via-red-300 to-red-200 py-20 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-red-500 mb-4">
             हमारा अनाथालय
           </h2>
-          <p className="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto">
+          <p className="text-gray-900 text-lg md:text-xl max-w-3xl mx-auto">
             हर बच्चे के लिए एक सुरक्षित, प्रेमपूर्ण और शिक्षाप्रद वातावरण। यहाँ
             हम बच्चों को शिक्षा, संस्कार और उज्ज्वल भविष्य की दिशा देते हैं।
           </p>
-          <p>
+          <p className="text-gray-900">
             हमारा अनाथालय हर बच्चे के लिए एक सुरक्षित, स्नेहपूर्ण और प्रेरणादायक
             वातावरण प्रदान करता है, जहाँ उन्हें परिवार जैसा प्रेम और देखभाल
             मिलती है। यहाँ हम केवल उनकी मूलभूत आवश्यकताओं को पूरा नहीं करते,
