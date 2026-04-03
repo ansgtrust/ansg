@@ -56,12 +56,12 @@ export const Header = () => {
                 )}
               </Link>
             ))}
-            <Button
-              disabled
-              className="bg-gradient-to-r from-red-600 to-rose-500 hover:from-red-700 hover:to-rose-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+            <Link
+              href="/donate"
+              className="bg-gradient-to-r from-red-600 to-rose-500 hover:from-red-700 hover:to-rose-600 text-white py-2 px-4 rounded shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Donate Now
-            </Button>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -92,12 +92,12 @@ export const Header = () => {
                 </Link>
               ))}
               <div className="px-4 pt-2">
-                <Button
-                  disabled
+                <Link
+                  href="/donate"
                   className="w-full bg-gradient-to-r from-red-600 to-rose-500 hover:from-red-700 hover:to-rose-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Donate Now
-                </Button>
+                </Link>
               </div>
             </nav>
           </div>

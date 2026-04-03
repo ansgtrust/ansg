@@ -86,6 +86,14 @@ export const Footer = () => {
                   संपर्क
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/donate"
+                  className="text-sm text-rose-100 hover:text-white transition-colors duration-200"
+                >
+                  Donate now
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -165,18 +173,24 @@ export const Footer = () => {
               rights reserved.
             </p>
             <div className="flex space-x-6">
-              <a
-                href="#"
+              <Link
+                href="/privacy-policy"
                 className="text-sm text-rose-200 hover:text-white transition-colors duration-200"
               >
                 Privacy Policy
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="/terms"
                 className="text-sm text-rose-200 hover:text-white transition-colors duration-200"
               >
-                Terms of Service
-              </a>
+                Terms & conditions
+              </Link>
+              <Link
+                href="/donation-policy"
+                className="text-sm text-rose-200 hover:text-white transition-colors duration-200"
+              >
+                Donation-policy
+              </Link>
             </div>
           </div>
         </div>
