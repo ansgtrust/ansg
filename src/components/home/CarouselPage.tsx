@@ -74,12 +74,12 @@ const CarouselPage = () => {
       api.off("select", onSelect);
     };
   }, [api]);
-  const autoplayOptions = {
-    delay: 4000, // Duration each slide is displayed in milliseconds
+  const autoplay = Autoplay({
+    delay: 2000, // Duration each slide is displayed in milliseconds
     stopOnMouseEnter: true, // Pauses autoplay on mouse hover
     stopOnFocusIn: true, // Pauses autoplay when carousel is focused
-    // stopOnInteraction: false, // Autoplay continues after user interaction
-  };
+    stopOnInteraction: false, // Autoplay continues after user interaction
+  });
 
   return (
     <section className="w-full overflow-hidden">
@@ -89,6 +89,7 @@ const CarouselPage = () => {
         opts={{
           loop: true,
         }}
+        plugins={[autoplay]}
       >
         {/* CONTENT */}
         <CarouselContent className="relative w-full !ml-0 !p-0 flex">

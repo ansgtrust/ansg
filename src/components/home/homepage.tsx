@@ -21,6 +21,7 @@ import { schoolInfo, features, testimonials, programs } from "@/mock/mock";
 import CarouselPage from "./CarouselPage";
 import Anathalay from "./Anathalay";
 import Gurukulam from "./Gurukulam";
+import DonateBanner from "../donate/DonateBanner";
 
 const iconMap = {
   BookOpen,
@@ -38,7 +39,6 @@ export const Homepage = () => {
       {/* Hero Section */}
       <Anathalay />
       <Gurukulam />
-
       {/* Programs Section */}
       <section className="py-20 bg-gradient-to-br from-rose-50 to-red-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -77,6 +77,8 @@ export const Homepage = () => {
           </div>
         </div>
       </section>
+
+      <DonateBanner />
 
       {/* Testimonials Section */}
       <section className="py-20 bg-white">

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
+import DonateButton from "./donate/DonateButton";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,12 +57,7 @@ export const Header = () => {
                 )}
               </Link>
             ))}
-            <Link
-              href="/donate"
-              className="bg-gradient-to-r from-red-600 to-rose-500 hover:from-red-700 hover:to-rose-600 text-white py-2 px-4 rounded shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              Donate Now
-            </Link>
+            <DonateButton />
           </nav>
 
           {/* Mobile Menu Button */}
@@ -91,13 +87,8 @@ export const Header = () => {
                   {link.label}
                 </Link>
               ))}
-              <div className="px-4 pt-2">
-                <Link
-                  href="/donate"
-                  className="w-full bg-gradient-to-r from-red-600 to-rose-500 hover:from-red-700 hover:to-rose-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
-                >
-                  Donate Now
-                </Link>
+              <div className="px-4 pt-2 text-center">
+                <DonateButton />
               </div>
             </nav>
           </div>
