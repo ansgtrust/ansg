@@ -35,7 +35,7 @@ export default function DonateBanner() {
 
         {/* CTA Button */}
         <Link href="/donate">
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-xl text-lg font-semibold shadow-lg transition-all">
+          <button className="cursor-pointer bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-xl text-lg font-semibold shadow-lg transition-all">
             Donate Now ❤️
           </button>
         </Link>

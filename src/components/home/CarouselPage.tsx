@@ -75,7 +75,7 @@ const CarouselPage = () => {
     };
   }, [api]);
   const autoplay = Autoplay({
-    delay: 2000, // Duration each slide is displayed in milliseconds
+    delay: 3500, // Duration each slide is displayed in milliseconds
     stopOnMouseEnter: true, // Pauses autoplay on mouse hover
     stopOnFocusIn: true, // Pauses autoplay when carousel is focused
     stopOnInteraction: false, // Autoplay continues after user interaction
